@@ -1,28 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./assets/styles.css">
-
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" href="./assets/icons/dashboard.png">
     <!-- google icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outline" rel="stylesheet">
 </head>
+
 <body>
     <div class="grid-container">
         <header class="header">
-
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class="header-left">
+                <span class="material-symbols-outlined">search</span>
+            </div>
+            <div class="header-right">
+                <span class="material-symbols-outlined">notifications</span>
+                <span class="material-symbols-outlined">mail</span>
+                <span class="material-icons-outlined">account_circle</span>
+            </div>
         </header>
 
-        <aside id="sideBar"></aside>
+        <aside id="sideBar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <span class="material-icons-outlined">inventory</span>storm's inventory
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-items"></li>
+            </ul>
+        </aside>
 
         <main class="main-container">
-            
+
         </main>
     </div>
 
-    
+
     <script src="./assets/script.js"></script>
 </body>
+
 </html>

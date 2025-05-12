@@ -1,27 +1,54 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #ebeef472;
-    color: gray;
+    background-color: #e6e8ed;
+    color: #666666;
     font-family: "Montserrat" sans-serif;
 }
-.material-icons-outline{
+
+.material-icons-outline {
     vertical-align: middle;
     line-height: 1px;
 }
 
-.grid-container{
+.text-primary {
+    color: #666666;
+}
+
+.text-blue {
+    color: #246dec
+}
+
+.text-red {
+    color: #cc3c43;
+}
+
+.text-green {
+    color: #367952;
+}
+
+.text-orange {
+    color: #f5b74f;
+}
+
+.font-weight-bold {
+    font-weight: 600px;
+}
+
+.grid-container {
     display: grid;
     grid-template-columns: 260px 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 3fr;
     grid-template-areas:
-    "sideBar header header header"
-    "sideBar main main main";
+        "sideBar header header header"
+        "sideBar main main main";
     height: 100vh;
 }
 
-.header{
+/* Header */
+
+.header {
     grid-area: header;
     height: 70px;
     background-color: #ffffff;
@@ -32,7 +59,13 @@ body{
     box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
 }
 
-#sideBar{
+.menu-icon {
+    display: none;
+}
+
+/* SideBar */
+
+#sideBar {
     grid-area: sideBar;
     height: 100%;
     background-color: #21232d;
@@ -42,7 +75,10 @@ body{
     -webkit-transition: all 0.5s;
 }
 
-.main-container{
+/* Main */
+
+.main-container {
     grid-area: main;
-    background-color: beige;
+    overflow-y: auto;
+    padding: 20px 20px;
 }
