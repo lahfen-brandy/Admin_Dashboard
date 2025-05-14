@@ -7,7 +7,8 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="./assets/styles.css">
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- favicon -->
     <link rel="icon" href="./assets/icons/dashboard.png">
     <!-- google icons -->
@@ -79,7 +80,7 @@
                     </div>
                     <span class="text-primary font-weight-bold">83</span>
                 </div>
-                
+
                 <div class="card">
                     <div class="card-inner">
                         <p class="text-primary">SALES ORDERS</p>
@@ -96,10 +97,25 @@
                     <span class="text-primary font-weight-bold">56</span>
                 </div>
             </div>
+            <div class="charts">
+                <div class="charts-card">
+                    <p class="chart-title">Top 5 Producst</p>
+                    <div id="bar-chart"></div>
+                </div>
+
+
+                <div class="charts-card">
+                    <p class="chart-title">Purcharse and Sales Orders</p>
+                    <div id="area-chart"></div>
+                </div>
+            </div>
         </main>
     </div>
 
-
+    <!-- Scripts -->
+    <!-- ApexChars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.5.0/apexcharts.min.js"></script>
+    <!-- Custom js -->
     <script src="./assets/script.js"></script>
 </body>
 
