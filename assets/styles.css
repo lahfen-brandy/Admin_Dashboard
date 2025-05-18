@@ -185,12 +185,14 @@ body {
 }
 
 .charts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+    display: flex;
+    flex-direction: row;
     gap: 20px;
 }
 
 .charts-card {
+    width: 100%;
     background: #ffffff;
     margin-bottom: 20px;
     padding: 25px;
@@ -213,7 +215,7 @@ body {
 
 /* Media Queries */
 
-/* Medium <= 992px */
+/* Medium <= 1024px */
 @media screen and (max-width: 1024px) {
     .grid-container {
         grid-template-columns: 1fr;
@@ -246,20 +248,14 @@ body {
     }
 
     .charts {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        margin-top: 30px;
+        margin-top: 25px;
+        flex-direction: column;
     }
-
-    /* .charts{
-        grid-template-columns: 1fr;
-        margin-top: 30px;
-    } */
 }
 
 /* Extra Small <= 576px*/
 @media screen and (max-width: 576px) {
-    .headr-left {
+    .header-left {
         display: none;
     }
 }
@@ -267,17 +263,7 @@ body {
 
 /* Media Screen 325px */
 @media screen and (max-width: 325px) {
-    .charts-card {
-        width: 90%;
-        margin: 0;
-    }
-
     .chart-title {
         justify-content: center;
-    }
-
-    #bar-chart,
-    #area-chart {
-        width: 100%;
     }
 }
